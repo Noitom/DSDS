@@ -45,7 +45,7 @@ export default {
 .log-bg {
   background-color: #cce4f1;
   height: 500px;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   padding: 4% 0;
 }
@@ -58,8 +58,8 @@ export default {
 .log-cloud1 {
   background-color: #fff;
   border-radius: 20px;
-  height: 380px;
-  width: 90%;
+  height: 400px;
+  width: 60%;
   margin: 0 auto;
   /* padding: 5% 0; */
 }

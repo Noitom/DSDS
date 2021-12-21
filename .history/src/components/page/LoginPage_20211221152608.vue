@@ -4,9 +4,9 @@
       <div class="log-cloud1">
         <Row>
           <Col span="12" class="log-cloud2">
-          <!-- <div>
+          <div>
             <img src="@/assets/img-1.jpg">
-          </div> -->
+          </div>
           </Col>
           <Col span="12" class="log-cloud3">
           <div><h3 class="log-txt">Translator Login</h3></div>
@@ -44,22 +44,19 @@ export default {
 }
 .log-bg {
   background-color: #cce4f1;
-  height: 500px;
-  width: 50%;
+  height: 550px;
+  width: 60%;
   margin: 0 auto;
   padding: 4% 0;
 }
-/* img{
-  width: auto;
-  max-width: 100%;
-  border-radius: 20px;
-  opacity:0.8;
-} */
+img{
+  height: 400px;
+}
 .log-cloud1 {
   background-color: #fff;
   border-radius: 20px;
-  height: 380px;
-  width: 90%;
+  height: 400px;
+  width: 80%;
   margin: 0 auto;
   /* padding: 5% 0; */
 }
@@ -82,7 +79,7 @@ export default {
   font-display: 微软雅黑;
 }
 .log-input{
-  width: 80%;
+  width: 370px;
   overflow: hidden;
   padding: 0 15px;
   font-size: 13px;

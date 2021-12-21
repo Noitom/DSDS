@@ -3,15 +3,11 @@
     <div class="log-bg">
       <div class="log-cloud1">
         <Row>
-          <Col span="12" class="log-cloud2">
-          <!-- <div>
-            <img src="@/assets/img-1.jpg">
-          </div> -->
-          </Col>
+          <Col span="12" class="log-cloud2">图片区域</Col>
           <Col span="12" class="log-cloud3">
-          <div><h3 class="log-txt">Translator Login</h3></div>
           <div class="log-cloud4">
-          <input type="text" placeholder="Username" class="log-input">
+           <h3>Translator Login</h3>
+          <input type="text" placeholder="username" class="log-input">
           <input type="password" placeholder="Password" class="log-input">
           <a href="#" class="log-btn">Login</a>
           </div>
@@ -28,6 +24,7 @@ export default {
   name: 'LoginPage',
   data () {
     return {
+      msg: 'Welcome to Your Vue.js App'
     }
   },
   components: {
@@ -43,25 +40,19 @@ export default {
   padding: 5% 0;
 }
 .log-bg {
-  background-color: #cce4f1;
-  height: 500px;
-  width: 50%;
+  background-color: #c8e1f1;
+  height: 550px;
+  width: 60%;
   margin: 0 auto;
   padding: 4% 0;
 }
-/* img{
-  width: auto;
-  max-width: 100%;
-  border-radius: 20px;
-  opacity:0.8;
-} */
 .log-cloud1 {
   background-color: #fff;
   border-radius: 20px;
-  height: 380px;
-  width: 90%;
+  height: 400px;
+  width: 80%;
   margin: 0 auto;
-  /* padding: 5% 0; */
+  padding: 5% 0;
 }
 .log-cloud2 {
   width: 40%;
@@ -72,17 +63,14 @@ export default {
   height: 340px;
 }
 .log-cloud4{
-  height: 330px;
-  padding: 10% 0;
+  padding: 15% 0;
+  background-color: pink;
 }
 .log-txt{
-  padding-top: 40px;
-  padding-bottom: 10px;
   font-size: 20px;
-  font-display: 微软雅黑;
 }
 .log-input{
-  width: 80%;
+  width: 370px;
   overflow: hidden;
   padding: 0 15px;
   font-size: 13px;

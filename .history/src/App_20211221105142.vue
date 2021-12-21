@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <SnfMenuBar v-if="false"></SnfMenuBar>
+    <SnfMenuBar></SnfMenuBar>
     <router-view/>
     <SnfFooter v-if="false"></SnfFooter>
+    <router-view/>
     <LoginPage></LoginPage>
   </div>
 </template>

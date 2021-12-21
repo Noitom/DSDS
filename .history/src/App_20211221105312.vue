@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SnfMenuBar v-if="false"></SnfMenuBar>
+    <SnfMenuBar></SnfMenuBar>
     <router-view/>
     <SnfFooter v-if="false"></SnfFooter>
     <LoginPage></LoginPage>

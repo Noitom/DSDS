@@ -4,9 +4,7 @@
       <div class="log-cloud1">
         <Row>
           <Col span="12" class="log-cloud2">
-          <!-- <div>
-            <img src="@/assets/img-1.jpg">
-          </div> -->
+          <div v-for="product in ProductArray" :key="product.title"></div>
           </Col>
           <Col span="12" class="log-cloud3">
           <div><h3 class="log-txt">Translator Login</h3></div>
@@ -28,6 +26,9 @@ export default {
   name: 'LoginPage',
   data () {
     return {
+      ProductArray: [
+        { image:require('@/components/image/img-1.jpg') }
+      ]
     }
   },
   components: {
@@ -44,24 +45,18 @@ export default {
 }
 .log-bg {
   background-color: #cce4f1;
-  height: 500px;
-  width: 50%;
+  height: 550px;
+  width: 60%;
   margin: 0 auto;
   padding: 4% 0;
 }
-/* img{
-  width: auto;
-  max-width: 100%;
-  border-radius: 20px;
-  opacity:0.8;
-} */
 .log-cloud1 {
   background-color: #fff;
   border-radius: 20px;
-  height: 380px;
-  width: 90%;
+  height: 400px;
+  width: 80%;
   margin: 0 auto;
-  /* padding: 5% 0; */
+  padding: 5% 0;
 }
 .log-cloud2 {
   width: 40%;
@@ -76,13 +71,12 @@ export default {
   padding: 10% 0;
 }
 .log-txt{
-  padding-top: 40px;
   padding-bottom: 10px;
   font-size: 20px;
   font-display: 微软雅黑;
 }
 .log-input{
-  width: 80%;
+  width: 370px;
   overflow: hidden;
   padding: 0 15px;
   font-size: 13px;

@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <SnfMenuBar v-if="false"></SnfMenuBar>
+    <SnfMenuBar></SnfMenuBar>
     <router-view/>
     <SnfFooter v-if="false"></SnfFooter>
-    <LoginPage></LoginPage>
   </div>
 </template>
 
 <script>
 import SnfMenuBar from '@/components/sub/SnfMenuBar.vue'
 import SnfFooter from '@/components/sub/SnfFooter.vue'
-import LoginPage from './components/page/LoginPage.vue'
 export default {
   name: 'App',
   components: {
     SnfMenuBar,
-    SnfFooter,
-    LoginPage
+    SnfFooter
   }
 }
 </script>

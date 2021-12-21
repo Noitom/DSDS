@@ -3,19 +3,16 @@
     <div class="log-bg">
       <div class="log-cloud1">
         <Row>
-          <Col span="12" class="log-cloud2">
-          <!-- <div>
-            <img src="@/assets/img-1.jpg">
-          </div> -->
-          </Col>
+          <Col span="12" class="log-cloud2">图片区域</Col>
           <Col span="12" class="log-cloud3">
-          <div><h3 class="log-txt">Translator Login</h3></div>
+          <div class="log-logo">Translator Login</div>
           <div class="log-cloud4">
-          <input type="text" placeholder="Username" class="log-input">
-          <input type="password" placeholder="Password" class="log-input">
-          <a href="#" class="log-btn">Login</a>
+          <input type="text" placeholder="username" :class="'log-input' + (account==''?' log-input-empty':'')" v-model="account">
+          <input type="password" placeholder="Password" :class="'log-input' + (password==''?' log-input-empty':'')"  v-model="password">
+          <a href="javascript:;" class="log-btn" @click="login">Login</a>
           </div>
           </Col>
+           <Loading v-if="isLoging" marginTop="-30%"></Loading>
         </Row>
       </div>
     </div>
@@ -28,6 +25,7 @@ export default {
   name: 'LoginPage',
   data () {
     return {
+      msg: 'Welcome to Your Vue.js App'
     }
   },
   components: {
@@ -39,29 +37,37 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
 .login-page{
   padding: 5% 0;
 }
 .log-bg {
-  background-color: #cce4f1;
-  height: 500px;
-  width: 50%;
+  background-color: #afd6f0;
+  height: 550px;
+  width: 60%;
   margin: 0 auto;
   padding: 4% 0;
 }
-/* img{
-  width: auto;
-  max-width: 100%;
-  border-radius: 20px;
-  opacity:0.8;
-} */
 .log-cloud1 {
   background-color: #fff;
-  border-radius: 20px;
-  height: 380px;
-  width: 90%;
+  border-radius: 25px;
+  height: 400px;
+  width: 80%;
   margin: 0 auto;
-  /* padding: 5% 0; */
+  padding: 5% 0;
 }
 .log-cloud2 {
   width: 40%;
@@ -70,19 +76,13 @@ export default {
 .log-cloud3 {
   width: 55%;
   height: 340px;
+  background-color: pink;
 }
 .log-cloud4{
-  height: 330px;
-  padding: 10% 0;
-}
-.log-txt{
-  padding-top: 40px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-display: 微软雅黑;
+  padding: 15% 0;
 }
 .log-input{
-  width: 80%;
+  width: 370px;
   overflow: hidden;
   padding: 0 15px;
   font-size: 13px;

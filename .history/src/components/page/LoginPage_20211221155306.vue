@@ -1,12 +1,14 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 <template>
   <div class="login-page">
     <div class="log-bg">
       <div class="log-cloud1">
         <Row>
           <Col span="12" class="log-cloud2">
-          <!-- <div>
+          <div>
             <img src="@/assets/img-1.jpg">
-          </div> -->
+          </div>
           </Col>
           <Col span="12" class="log-cloud3">
           <div><h3 class="log-txt">Translator Login</h3></div>
@@ -44,22 +46,24 @@ export default {
 }
 .log-bg {
   background-color: #cce4f1;
-  height: 500px;
-  width: 50%;
+  height: 550px;
+  width: 60%;
   margin: 0 auto;
   padding: 4% 0;
 }
-/* img{
+img{
+  /* height: 400px;
+  width: 110%; */
   width: auto;
   max-width: 100%;
   border-radius: 20px;
   opacity:0.8;
-} */
+}
 .log-cloud1 {
   background-color: #fff;
   border-radius: 20px;
-  height: 380px;
-  width: 90%;
+  height: 400px;
+  width: 80%;
   margin: 0 auto;
   /* padding: 5% 0; */
 }

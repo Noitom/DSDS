@@ -4,9 +4,9 @@
       <div class="log-cloud1">
         <Row>
           <Col span="12" class="log-cloud2">
-          <!-- <div>
+          <div>
             <img src="@/assets/img-1.jpg">
-          </div> -->
+          </div>
           </Col>
           <Col span="12" class="log-cloud3">
           <div><h3 class="log-txt">Translator Login</h3></div>
@@ -49,12 +49,12 @@ export default {
   margin: 0 auto;
   padding: 4% 0;
 }
-/* img{
+img{
   width: auto;
   max-width: 100%;
   border-radius: 20px;
   opacity:0.8;
-} */
+}
 .log-cloud1 {
   background-color: #fff;
   border-radius: 20px;
