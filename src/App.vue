@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <SnfMenuBar></SnfMenuBar>
     <router-view/>
+    <SnfFooter v-if="false"></SnfFooter>
   </div>
 </template>
 
 <script>
+import SnfMenuBar from '@/components/sub/SnfMenuBar.vue'
+import SnfFooter from '@/components/sub/SnfFooter.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    SnfMenuBar,
+    SnfFooter
+  }
 }
 </script>
 

@@ -7,33 +7,48 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
-      component: () => import('@/components/page/index')
+      name: 'homePage',
+      component: () => import('@/components/page/HomePage')
     },
     {
-      path: '/index',
-      name: 'index',
-      component: () => import('@/components/page/index')
+      path: '/homePage',
+      name: 'homePage',
+      component: () => import('@/components/page/HomePage')
     },
     {
-      path: '/products',
-      name: 'products',
-      component: () => import('@/components/page/products')
+      path: '/dataSearch',
+      name: 'dataSearch',
+      component: () => import('@/components/page/DataSearch')
     },
     {
-      path: '/partner',
-      name: 'partner',
-      component: () => import('@/components/page/partner')
+      path: '/dataCenter',
+      name: 'dataCenter',
+      component: () => import('@/components/page/DataCenter')
     },
     {
-      path: '/support',
-      name: 'support',
-      component: () => import('@/components/page/support')
+      path: '/dataStatistics',
+      name: 'dataStatistics',
+      component: () => import('@/components/page/DataStatistics')
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('@/components/page/contact')
+      path: '/equipmentCenter',
+      name: 'equipmentCenter',
+      component: () => import('@/components/page/EquipmentCenter')
+    },
+    {
+      path: '/scientificOnline',
+      name: 'scientificOnline',
+      component: () => import('@/components/page/ScientificOnline')
+    },
+    {
+      path: '/systemManage',
+      name: 'systemManage',
+      component: () => import('@/components/page/SystemManage')
+    },
+    {
+      path: '/personalCenter',
+      name: 'personalCenter',
+      component: () => import('@/components/page/PersonalCenter')
     }
   ]
 })
