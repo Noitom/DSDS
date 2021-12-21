@@ -16,6 +16,11 @@ export default new Router({
       component: () => import('@/components/page/HomePage')
     },
     {
+      path: '/loginPage',
+      name: 'loginPage',
+      component: () => import('@/components/page/LoginPage')
+    },
+    {
       path: '/dataSearch',
       name: 'dataSearch',
       component: () => import('@/components/page/DataSearch')
